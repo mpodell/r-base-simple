@@ -1,6 +1,7 @@
 FROM rocker/r-base
 
-RUN apt-get install -y \
+RUN apt-get update \
+    apt-get install -y \
     openssl \
     curl \
 ## clean up
